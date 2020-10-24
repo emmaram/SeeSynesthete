@@ -9,16 +9,19 @@ function colourRow(character, boxColour) {
     var row = document.createElement("div");    
     row.className = "row-container";
     
-// define the character element
+    // define the character element
     var characterElement = document.createElement("div");    
     characterElement.className = "colour-character";
     var text = document.createTextNode(character);
     characterElement.appendChild(text);
 
-//define the box element    
-    var boxElement = document.createElement("div");    
+    //define the box element    
+    //<input type="color" value="#ff0000" style="width:50px;">
+    var boxElement = document.createElement("input");    
+    boxElement.setAttribute("type", "color");
+    boxElement.setAttribute("value", boxColour);
     boxElement.className = "colour-box";
-    boxElement.style.backgroundColor = boxColour;
+    //boxElement.style.backgroundColor = boxColour;
     boxElement.title = boxColour;
     
     row.appendChild(characterElement);

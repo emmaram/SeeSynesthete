@@ -4,6 +4,11 @@
 //     <div class="colour-box" title="blah"></div>
 // </div>
 
+function changeColour() {
+    console.log("change");
+
+}
+
 // Define single row within Settings
 function colourRow(character, boxColour) {
     var row = document.createElement("div");    
@@ -20,6 +25,8 @@ function colourRow(character, boxColour) {
     var boxElement = document.createElement("input");    
     boxElement.setAttribute("type", "color");
     boxElement.setAttribute("value", boxColour);
+    // boxElement.setAttribute("onchange", "changeColour(this.value)");
+    boxElement.setAttribute("onchange", changeColour);
     boxElement.className = "colour-box";
     //boxElement.style.backgroundColor = boxColour;
     boxElement.title = boxColour;

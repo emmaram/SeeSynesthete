@@ -1,5 +1,4 @@
 var defaultColours = {
-    // "a": "hsla(53, 95%, 55%, 1)",
     "a": "#FFDD00",
     "b": "#BO3EOC",
     "c": "#1B12A1",
